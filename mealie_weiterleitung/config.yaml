@@ -1,0 +1,14 @@
+name: Mealie Weiterleitung
+version: "1.0.0"
+slug: mealie_weiterleitung
+description: Leitet Port 9381 an Mealie auf dem NAS (192.168.178.8:9381) weiter
+arch:
+  - amd64
+  - aarch64
+startup: application
+boot: auto
+init: false
+ports:
+  9381/tcp: 9381
+ports_description:
+  9381/tcp: Mealie
